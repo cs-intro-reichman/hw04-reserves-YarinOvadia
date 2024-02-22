@@ -62,9 +62,8 @@ System.out.println(capVowelsLowRest(check));
 
 
     public static String camelCase (String string) {
-        // Write your code here:
-        return "";
-    }
+        
+            }
 
     public static int[] allIndexOf (String string, char chr) {
         // Write your code here:
