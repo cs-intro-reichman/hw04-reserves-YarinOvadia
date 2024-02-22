@@ -43,7 +43,7 @@ System.out.println(isSorted(arrxxx));
         return k;
     }
      
-//2#
+//#2
 
 public static int secondMaxValue(int[] arr) {
     int count = 0;

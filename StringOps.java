@@ -26,11 +26,15 @@ public class StringOps {
         System.out.println(capVowelsLowRest(str));
 System.out.println(capVowelsLowRest(check));
 System.out.println(camelCase(check));
+int[] checkindex = allIndexOf(str, 'e');
+System.out.println(Arrays.toString(checkindex));
+
 
         */
 
 
     }
+ //#1
     
      public static String capVowelsLowRest(String string) {
         
@@ -58,7 +62,7 @@ System.out.println(camelCase(check));
         return str;
 
     }
-
+//#2
 
     public static String camelCase(String string) {
         String str = "";
@@ -103,8 +107,29 @@ System.out.println(camelCase(check));
     }
 
   
-    public static int[] allIndexOf (String string, char chr) {
-        // Write your code here:
-        return new int[1];
+//#3
+    public static int[] allIndexOf(String string, char chr) {
+        int count = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == chr) {
+                count++;
+            }
+        }
+        int[] index = new int[count];
+        int indexOf = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == chr) {
+                index[indexOf] = i;
+                indexOf++;
+            }
+
+        }
+
+        return index;
+
     }
+
+    
+    
 }
+
