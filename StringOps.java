@@ -1,5 +1,4 @@
 public class StringOps {
-    ////////////////////////////////////////////////////////////
     //////                                               ///////
     //////              Reminder:                        ///////
     //////        allowed methods                        ///////
@@ -20,7 +19,6 @@ public class StringOps {
     //////        see example for substring              ///////
     //////        in Recitation    3 question 5             ///////
     //////                                               ///////
-    ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         /*
         String str = "deMO demo DEMO dEMo vowels are fun";
@@ -28,7 +26,7 @@ public class StringOps {
         System.out.println(capVowelsLowRest(str));
 System.out.println(capVowelsLowRest(check));
 
-*/
+        */
 
 
     }
