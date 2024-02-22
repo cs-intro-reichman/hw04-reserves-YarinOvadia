@@ -18,7 +18,7 @@ public class StringOps {
     //////        the function by yourself.              ///////
     //////                                               ///////
     //////        see example for substring              ///////
-    //////        in Recitation 3 question 5             ///////
+    //////        in Recitation    3 question 5             ///////
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
