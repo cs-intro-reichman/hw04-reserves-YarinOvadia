@@ -32,7 +32,7 @@ System.out.println(camelCase(str));
 
     }
     
-   public static String capVowelsLowRest(String string) {
+     public static String capVowelsLowRest(String string) {
         
         String str = "";
         for (int i = 0; i < string.length(); i++) {
@@ -60,7 +60,7 @@ System.out.println(camelCase(str));
     }
 
 
-
+    
   
     public static int[] allIndexOf (String string, char chr) {
         // Write your code here:
