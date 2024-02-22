@@ -25,6 +25,7 @@ public class StringOps {
         String check= "Hello World";
         System.out.println(capVowelsLowRest(str));
 System.out.println(capVowelsLowRest(check));
+System.out.println(camelCase(check));
 
         */
 
@@ -59,9 +60,46 @@ System.out.println(capVowelsLowRest(check));
     }
 
 
-      public static String camelCase (String string) {
-        // Write your code here:
-        return "";
+    public static String camelCase(String string) {
+        String str = "";
+        boolean flag = false;  
+    
+        for (int i = 0; i < string.length(); i++) {
+            char c = string.charAt(i);
+    
+            if (c == ' ') {
+                flag = true;  
+            }
+    
+            if (c >= 'a' && c <= 'z') {
+                if (flag) {
+                    str += (char) (c - 32);
+                    flag = false;
+                } else {
+                    str += c;
+                }
+            } else if (c >= 'A' && c <= 'Z') {
+                if (i == 0 || !flag) {
+                    str += (char) (c + 32);
+                    flag = false;
+                } else {
+                    str += c;
+                    flag = false;
+                }
+            } else if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+                str += c;
+            }
+        }
+    
+        char char1 = str.charAt(0);
+        if (char1 >= 'A' && char1 <= 'Z') {
+            char1 = (char) (char1 + 32);
+            str = str.substring(1);
+            String newString = "" + char1;
+            str = newString + str;
+        }
+    
+        return str;
     }
 
   
