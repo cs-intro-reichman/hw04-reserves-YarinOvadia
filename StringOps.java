@@ -34,7 +34,8 @@ System.out.println(Arrays.toString(checkindex));
 
 
     }
- //#1
+    
+    //#1
     
      public static String capVowelsLowRest(String string) {
         
