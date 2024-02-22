@@ -25,7 +25,6 @@ public class StringOps {
         String check= "Hello World";
         System.out.println(capVowelsLowRest(str));
 System.out.println(capVowelsLowRest(check));
-System.out.println(camelCase(str));
 
         */
 
@@ -60,7 +59,11 @@ System.out.println(camelCase(str));
     }
 
 
-    
+      public static String camelCase (String string) {
+        // Write your code here:
+        return "";
+    }
+
   
     public static int[] allIndexOf (String string, char chr) {
         // Write your code here:
