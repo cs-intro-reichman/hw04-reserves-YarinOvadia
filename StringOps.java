@@ -25,15 +25,15 @@ public class StringOps {
         String check= "Hello World";
         System.out.println(capVowelsLowRest(str));
 System.out.println(capVowelsLowRest(check));
+System.out.println(camelCase(str));
 
         */
 
 
     }
     
-    
-    public static String capVowelsLowRest (String string) 
-    {
+   public static String capVowelsLowRest(String string) {
+        
         String str = "";
         for (int i = 0; i < string.length(); i++) {
             char ch = string.charAt(i);
@@ -49,22 +49,19 @@ System.out.println(capVowelsLowRest(check));
                 } else {
                     str += (char) (ch + 32);
                 }
+
             }
             if (ch == ' ') {
                 str += ch;
             }
         }
         return str;
+
     }
 
 
 
-
-
-    public static String camelCase (String string) {
-        
-            }
-
+  
     public static int[] allIndexOf (String string, char chr) {
         // Write your code here:
         return new int[1];
